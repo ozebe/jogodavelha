@@ -1,0 +1,21 @@
+O método usual que eu vi é XYZ, que geralmente corresponde a major.minor.patch:
+
+Os números de versão principais mudam sempre que há mudanças significativas sendo introduzidas. Por exemplo, uma mudança grande ou potencialmente atrasada incompatível em um pacote de software.
+Os números de versão menores mudam quando uma nova característica menor é introduzida ou quando um conjunto de recursos menores é lançado.
+Os números de patch mudam quando uma nova compilação do software é lançada para clientes. Isso é normalmente para pequenas correções de erros ou similares.		
+
+usar apache file utils 
+criarIni(caminho, nome);
+criarSecao(nomeSecao);
+criarChave(nomeSecao, nomeChave, valorChave);
+criarComentario(nomeSecao, comentario);
+editValorChave(nomeSecao, nomeChave, valorNovo);
+editNomeChave(nomeSecao, nomeChave, nomeChaveNovo);
+editNomeSecao(nomeSecao, nomeSecaoNovo);
+
+getIni(caminho, nome);
+getSecao(nomeSecao); //mostra as chaves e valores contidos na secao
+getChave(nomeSecao, nomeChave); //pega o valor da chave contida na seção
+
+
+criarBackup(caminho, nome); //gera um segundo .ini com as mesmas informações contidas no primeiro arquivo
